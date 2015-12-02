@@ -7,20 +7,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class EkranGlowny extends ActionBarActivity {
 
-    Button startBtn;
+    Button menuBtn, refBtn;
+    TextView TVwplaty, TVwyplaty, TVsaldo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        startBtn=(Button)findViewById(R.id.button);
-        startBtn.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_ekran_glowny);
+        menuBtn=(Button)findViewById(R.id.menuBtn);
+        menuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(getApplicationContext(),EkranGlowny.class);
+                Intent intent = new Intent (getApplicationContext(),Akcja.class);
                 startActivity(intent);
             }
         });
@@ -30,7 +32,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_ekran_glowny, menu);
         return true;
     }
 

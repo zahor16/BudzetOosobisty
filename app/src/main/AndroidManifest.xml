@@ -16,6 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".EkranGlowny"
+            android:label="@string/title_activity_ekran_glowny"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.zahor.budzetosobisty.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Akcja"
+            android:label="@string/title_activity_akcja"
+            android:parentActivityName=".EkranGlowny" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.zahor.budzetosobisty.EkranGlowny" />
+        </activity>
     </application>
 
 </manifest>
