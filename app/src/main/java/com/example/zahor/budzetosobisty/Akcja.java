@@ -1,17 +1,64 @@
 package com.example.zahor.budzetosobisty;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class Akcja extends ActionBarActivity {
+
+    Button dodajBtn;
+    Button odejmijBtn;
+    Button statBtn;
+    Button resetBtn;
+    Button wykresBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_akcja);
+
+        dodajBtn= (Button) findViewById(R.id.dodajBtn);
+        dodajBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Dodawanie.class);
+                startActivity(intent);
+
+            }
+        });
+        odejmijBtn= (Button) findViewById(R.id.odejmijBtn);
+        odejmijBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Odejmowanie.class);
+                startActivity(intent);
+
+            }
+        });
+        statBtn= (Button) findViewById(R.id.statBtn);
+        statBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Statystyki.class);
+                startActivity(intent);
+
+            }
+        });
+        wykresBtn= (Button) findViewById(R.id.wykresBtn);
+        wykresBtn.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(),Wykres.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

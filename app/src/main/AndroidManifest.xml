@@ -32,6 +32,38 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.zahor.budzetosobisty.EkranGlowny" />
         </activity>
+        <activity
+            android:name=".Dodawanie"
+            android:label="@string/title_activity_dodawanie"
+            android:parentActivityName=".Akcja" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.zahor.budzetosobisty.Akcja" />
+        </activity>
+        <activity
+            android:name=".Odejmowanie"
+            android:label="@string/title_activity_odejmowanie"
+            android:parentActivityName=".Akcja" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.zahor.budzetosobisty.Akcja" />
+        </activity>
+        <activity
+            android:name=".Statystyki"
+            android:label="@string/title_activity_statystyki"
+            android:parentActivityName=".Akcja" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.zahor.budzetosobisty.Akcja" />
+        </activity>
+        <activity
+            android:name=".Wykres"
+            android:label="@string/title_activity_wykres"
+            android:parentActivityName=".Akcja" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.zahor.budzetosobisty.Akcja" />
+        </activity>
     </application>
 
 </manifest>
