@@ -7,4 +7,148 @@
     tools:context="com.example.zahor.budzetosobisty.Statystyki"
     android:background="#ffbbfaff">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Statystyki"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Maksymalna wpłata:"
+        android:id="@+id/tv1"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Minimalna wpłata:"
+        android:id="@+id/tv2"
+        android:layout_below="@+id/tv1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Średnia wpłata:"
+        android:id="@+id/tv3"
+        android:layout_below="@+id/tv2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Maksymalna wypłata:"
+        android:id="@+id/tv4"
+        android:layout_below="@+id/tv3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Minimalna wypłata:"
+        android:id="@+id/tv5"
+        android:layout_below="@+id/tv4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Średnia wypłata:"
+        android:id="@+id/tv6"
+        android:layout_below="@+id/tv5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvWpMax"
+        android:layout_alignTop="@+id/tv1"
+        android:layout_toRightOf="@+id/tv1"
+        android:layout_toEndOf="@+id/tv1"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvWpMin"
+        android:layout_below="@+id/tv1"
+        android:layout_toRightOf="@+id/tv2"
+        android:layout_toEndOf="@+id/tv2"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvWpSr"
+        android:layout_alignTop="@+id/tv3"
+        android:layout_toRightOf="@+id/tv3"
+        android:layout_toEndOf="@+id/tv3"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvWypMax"
+        android:layout_above="@+id/tv5"
+        android:layout_toRightOf="@+id/tv4"
+        android:layout_toEndOf="@+id/tv4"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvWypMin"
+        android:layout_alignBottom="@+id/tv5"
+        android:layout_toRightOf="@+id/tv5"
+        android:layout_toEndOf="@+id/tv5"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvWypSr"
+        android:layout_alignBottom="@+id/tv6"
+        android:layout_toRightOf="@+id/tv6"
+        android:layout_toEndOf="@+id/tv6"
+        android:textIsSelectable="false"
+        android:textSize="20dp" />
 </RelativeLayout>

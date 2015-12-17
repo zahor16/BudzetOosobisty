@@ -7,4 +7,73 @@
     tools:context="com.example.zahor.budzetosobisty.Dodawanie"
     android:background="#ffbbfaff">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Wpłaty"
+            android:id="@+id/tytul3"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+
+            android:ems="10"
+            android:hint="@string/edit_tytul"
+            android:id="@+id/wplataTxt"
+            android:layout_marginBottom="15dp"
+            android:enabled="true"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_kwota"
+            android:ems="10"
+            android:id="@+id/kwotaTxt"
+            android:layout_marginBottom="15dp"
+            android:inputType="numberDecimal"
+            android:enabled="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/dataTxt"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/edit_data"
+            android:enabled="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Dodaj wpłatę"
+            android:id="@+id/dodajBtn"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick"
+            android:textSize="25dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Pokaż wpłaty"
+            android:id="@+id/pokazBtn"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp" />
+
+    </LinearLayout>
 </RelativeLayout>

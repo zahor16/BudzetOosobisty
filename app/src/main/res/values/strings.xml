@@ -9,4 +9,7 @@
     <string name="title_activity_odejmowanie">Odejmowanie</string>
     <string name="title_activity_statystyki">Statystyki</string>
     <string name="title_activity_wykres">Wykres</string>
+    <string name="edit_tytul">Tytuł</string>
+    <string name="edit_kwota">Kwota</string>
+    <string name="edit_data">Data</string>
 </resources>

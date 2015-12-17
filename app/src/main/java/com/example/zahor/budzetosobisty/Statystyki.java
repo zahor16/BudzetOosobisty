@@ -1,19 +1,60 @@
 package com.example.zahor.budzetosobisty;
 
+import android.database.Cursor;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class Statystyki extends ActionBarActivity {
+
+    TextView tvWpMax, tvWpMin, tvWpSr, tvWypMax, tvWypMin, tvWypSr;
+    DatabaseHelper myDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statystyki);
+
+        tvWpMax=(TextView)findViewById(R.id.tvWpMax);
+        tvWpMin=(TextView)findViewById(R.id.tvWpMin);
+        tvWpSr=(TextView)findViewById(R.id.tvWpSr);
+        tvWypMax=(TextView)findViewById(R.id.tvWypMax);
+        tvWypMin=(TextView)findViewById(R.id.tvWypMin);
+        tvWypSr=(TextView)findViewById(R.id.tvWypSr);
+        myDb=new DatabaseHelper(this);
+        ViewStats();
     }
 
+    public void ViewStats(){
+        Cursor srWp = myDb.SrWplata();
+        Cursor srWyp = myDb.SrWyplata();
+        Cursor minWyp = myDb.MinWyplata();
+        Cursor maxWyp = myDb.MaxWyplata();
+        Cursor minWp = myDb.MinWplata();
+        Cursor maxWp = myDb.MaxWplata();
+
+        while (maxWp.moveToNext()) {
+            tvWpMax.setText(maxWp.getString(0));
+        }
+        while (minWp.moveToNext()) {
+            tvWpMin.setText(minWp.getString(0));
+        }
+        while (maxWyp.moveToNext()) {
+            tvWypMax.setText(maxWyp.getString(0));
+        }
+        while (minWyp.moveToNext()) {
+            tvWypMin.setText(minWyp.getString(0));
+        }
+        while (srWyp.moveToNext()) {
+            tvWypSr.setText(srWyp.getString(0));
+        }
+        while (srWp.moveToNext()) {
+            tvWpSr.setText(srWp.getString(0));
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

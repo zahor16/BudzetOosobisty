@@ -7,4 +7,65 @@
     tools:context="com.example.zahor.budzetosobisty.Odejmowanie"
     android:background="#ffbbfaff">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Wydatki"
+            android:id="@+id/tytul4"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:textSize="30dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/edit_tytul"
+            android:ems="10"
+            android:id="@+id/wydatkiTxt"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_kwota"
+            android:ems="10"
+            android:id="@+id/kwota2Txt"
+            android:layout_marginBottom="15dp"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/data2Txt"
+            android:hint="@string/edit_data"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Dodaj wydatek"
+            android:id="@+id/odejmijBtn"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:text="Pokaż wydatki"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp" />
+    </LinearLayout>
 </RelativeLayout>
